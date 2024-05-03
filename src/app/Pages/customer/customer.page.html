@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bienvenido {{nombre}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <div class="personalInfo">
+      <ion-grid>
+        <ion-row>
+          <ion-col offset="5" size="2">
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col offset="3" size="2">
+            <ion-row>Nombre</ion-row>
+            <ion-row>Apellido</ion-row>
+            <ion-row>Id</ion-row>
+            <ion-row>Email</ion-row>
+            <ion-row>Celular</ion-row>
+            <ion-row>Direccón</ion-row>
+            <ion-row>Puesto</ion-row>
+          </ion-col>
+          <ion-col size="3">
+            <ion-row> {{nombre}} </ion-row>
+            <ion-row>{{apellido}}</ion-row>
+            <ion-row>{{id}}</ion-row>
+            <ion-row>{{email}}</ion-row>
+            <ion-row>{{celular}}</ion-row>
+            <ion-row>{{direccion}}</ion-row>
+            <ion-row>{{puesto}}</ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-toolbar>
+</ion-content>

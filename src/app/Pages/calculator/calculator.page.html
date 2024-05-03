@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Caculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <div class="personalInfo">
+      <ion-grid>
+        <ion-row>
+          <ion-col offset="3" size="2">
+            <ion-item>
+              <ion-label position="floating">Primer valor</ion-label>
+              <ion-input type="number" [(ngModel)]="v1"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col offset="1" size="2">
+            <ion-item>
+              <ion-label position="floating">Segundo Valor</ion-label>
+              <ion-input type="number" [(ngModel)]="v2"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col offset="1" size="10">
+            <ion-row>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('+')">SUMA</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('-')">RESTA</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('*')">MULTIPLICAR</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('/')">DIVIDIR</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('!')">FACTORIAL</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('Fib')">FIBONACCI</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('%')">MODULO</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('Par')">PAR</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button expand="full" (click)="calcular('Clear')">Limpiar</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div class="resultado">
+        {{ r }}
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-content>

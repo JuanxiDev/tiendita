@@ -6,11 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-
-
 <ion-content [fullscreen]="true">
   <ion-toolbar>
     <div>
+      <app-my-product  (eventoCrearProducto)="AgregarProducto($event)"></app-my-product>
       <ion-grid>
         <ion-row>
           <ion-col offset="1" size="5">

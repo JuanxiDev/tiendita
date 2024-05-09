@@ -1,21 +1,23 @@
-<p>
-  <ion-label>Nombre del producto</ion-label>
-  <ion-input [(ngModel)]="nombreProductoInput"></ion-input>
-  <ion-label for="precio" class="form-label">Modelo del producto</ion-label>
-  <ion-input [(ngModel)]="modeloInput"></ion-input>
-  <ion-label for="descripcion" class="form-label">Kilometraje del producto</ion-label>
-  <ion-input [(ngModel)]="kilometrajeInput"></ion-input>
-  <ion-label for="categoria" class="form-label">Ubicación del producto</ion-label>
-  <ion-input [(ngModel)]="ubicacionInput"></ion-input>
-  <ion-label for="precio" class="form-label">Precio del producto</ion-label>
-  <ion-input [(ngModel)]="precioInput"></ion-input>
-  <ion-label for="image" class="form-label">Dale una imagen a tu producto</ion-label>
-  <ion-input [(ngModel)]="imagenInput"></ion-input>
-  <ion-label for="rate" class="form-label">Rate</ion-label>
-  <ion-input [(ngModel)]="ratingInput"></ion-input>
+<div class="container">
+  <p>
+    <ion-label>Nombre del producto</ion-label>
+    <ion-input [(ngModel)]="nombreProductoInput"></ion-input>
+    <ion-label for="precio" class="form-label">Modelo del producto</ion-label>
+    <ion-input [(ngModel)]="modeloInput"></ion-input>
+    <ion-label for="descripcion" class="form-label">Kilometraje del producto</ion-label>
+    <ion-input [(ngModel)]="kilometrajeInput"></ion-input>
+    <ion-label for="categoria" class="form-label">Ubicación del producto</ion-label>
+    <ion-input [(ngModel)]="ubicacionInput"></ion-input>
+    <ion-label for="precio" class="form-label">Precio del producto</ion-label>
+    <ion-input [(ngModel)]="precioInput"></ion-input>
+    <ion-label for="image" class="form-label">Dale una imagen a tu producto</ion-label>
+    <ion-input [(ngModel)]="imagenInput"></ion-input>
+    <ion-label for="rate" class="form-label">Rate</ion-label>
+    <ion-input [(ngModel)]="ratingInput"></ion-input>
 
-  <ion-button (click)="guardarProducto()">Save</ion-button>
+    <ion-button (click)="guardarProducto()">Save</ion-button>
 
-  {{mensajePadre}}
+    {{mensajePadre}}
 
-</p>
+  </p>
+</div>

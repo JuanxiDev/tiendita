@@ -43,6 +43,13 @@ export class MyProductComponent implements OnInit {
       }
     }
     this.eventoCrearProducto.emit(newProd)
+    this.nombreProductoInput = ' '
+    this.modeloInput = ' '
+    this.kilometrajeInput = ' '
+    this.ubicacionInput = ' '
+    this.precioInput = ' '
+    this.imagenInput = ' '
+    this.ratingInput = 0;
 
   }
 

@@ -11,7 +11,7 @@ import { MyProductComponent } from './Components/my-product/my-product.component
 
 
 @NgModule({
-  declarations: [AppComponent, MyProductComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

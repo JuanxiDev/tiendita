@@ -8,6 +8,8 @@ import { ProductPageRoutingModule } from './product-routing.module';
 
 import { ProductPage } from './product.page';
 
+import { MyProductComponent } from '../../Components/my-product/my-product.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { ProductPage } from './product.page';
     IonicModule,
     ProductPageRoutingModule
   ],
-  declarations: [ProductPage]
+  declarations: [ProductPage, MyProductComponent]
 })
 export class ProductPageModule {}

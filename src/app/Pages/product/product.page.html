@@ -9,10 +9,10 @@
 <ion-content [fullscreen]="true">
   <ion-toolbar>
     <div>
-      <app-my-product  (eventoCrearProducto)="AgregarProducto($event)"></app-my-product>
       <ion-grid>
         <ion-row>
           <ion-col offset="1" size="5">
+            <app-my-product (eventoCrearProducto)="AgregarProducto($event)"></app-my-product>
             <ion-card *ngFor="let car of productos">
               <ion-card-header>
                 <img alt="carros" src="{{car.imagen}}" style="max-width: 500px; max-height: 1000px;" />

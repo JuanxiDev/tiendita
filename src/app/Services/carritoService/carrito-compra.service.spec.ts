@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CarritoCompraService } from './carrito-compra.service';
+import { CarritoCompraService } from '../carrito-compra.service';
 
 describe('CarritoCompraService', () => {
   let service: CarritoCompraService;

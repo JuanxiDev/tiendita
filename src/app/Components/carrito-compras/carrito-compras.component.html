@@ -1,0 +1,16 @@
+<ion-list>
+  <ion-item *ngFor="let book of carritoLista">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{book.title}}</ion-card-title>
+        <ion-card-subtitle>{{book.rating}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Precio:{{book.price}}
+        <br>
+      <img alt="celular" src="{{book.image}}" style="max-width: 150px; max-height: 150px;" />
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-list>

@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { FakestorePageRoutingModule } from './fakestore-routing.module';
 
 import { FakestorePage } from './fakestore.page';
-import { NewProductComponent } from 'src/app/Components/new-product/new-product.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,6 @@ import { NewProductComponent } from 'src/app/Components/new-product/new-product.
     IonicModule,
     FakestorePageRoutingModule
   ],
-  declarations: [FakestorePage, NewProductComponent]
+  declarations: [FakestorePage]
 })
 export class FakestorePageModule {}

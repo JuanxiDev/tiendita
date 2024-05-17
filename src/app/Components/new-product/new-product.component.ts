@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Producto } from '../../interfaces/producto.model';
+import { ComponentsModule } from '../components.module';
 
 @Component({
   selector: 'app-new-product',
